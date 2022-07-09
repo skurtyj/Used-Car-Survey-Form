@@ -1,0 +1,119 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html>
+  <link rel="stylesheet" href="styles.css"/>
+  <head>
+    <title>Used Vehicle Survey Form</title>
+    </head>
+  <div class="envelope">
+    <body>
+     <div class="title">
+      <h1 id="title">Used Vehicle Survey Form</h1>
+      <p id="description" type="description">Help us understand the logic of private party vehicle buyers and sellers</p>
+  </div>
+  <div class="form">  
+      <form id="survey-form">
+     <label id="name-label">Name (optional) <input id="name" type="text" required placeholder="James Bond"></label>
+       <label id="email-label"> Email <input id="email" type="email" placeholder="jamesbond@protonmail.com" required></label>
+       <label id="year-label"> Year of Vehicle <input id="year" type="number" min="1985" max="2022" placeholder="2003" required></label>
+       <label id="make-label"> Make <input id="make" type="text" placeholder="Chevrolet" required></label>
+       <label id="model-label"> Model <input id="model" type="text" placeholder="Silverado" required></label>
+       <label id="number-label"> Years of ownership (if less than 1, enter 0) <input id="number" type="number" min="0" max="30" placeholder="5" required></label>
+       <label id="color-label"> Color <select id="dropdown" name="cars" required>
+         <option> White</option>
+         <option> Silver</option>
+         <option> Blue</option>
+         <option> Tan</option>
+         <option> Gray</option>
+         <option> Black</option>
+         <option> Brown</option>
+         <option> Teal</option>
+        </select>
+      </label>
+      <p id="ownership status">Select Ownership Status</p> 
+      <input id="own and paid off" type="radio" value="own and paid off" name="ownership"/> <label for="own and paid off">Own and paid off </label><br>
+      <input id="own and make payments" type="radio" value="own and make payments" name="ownership"/><label for="own and make payments"> Own and make payments</label><br>
+       <input id="lease" type="radio" value="lease" name="ownership"><label for="lease"> Lease</label><br>
+       <p id="sell timeframe">How soon do you need to change vehicles?</p>
+       <input id="now" type="checkbox" value="now" name="sell timeframe"/><lable for="now"> Now</label><br>
+       <input id="six months" type="checkbox" value="six months" name="sell timeframe"/><label for="six months"> Six Months</label><br>
+       <input id="One year or greater" type="checkbox" value="One year or greater" name="sell timeframe"/><label for="One year or greater"> One year or greater</label><br>
+       <p id="textbox" name="textbox">Comments and suggestions go here:</p> <textarea id="comments" name="comments" rows="4" cols="40"></textarea>
+       <button class="submit" id="submit" type="submit">Submit</button>
+    </form>
+     </div>      
+    </body>
+  </div>
+  </html>
+
+
+** end of undefined **
+
+** start of undefined **
+
+div.title{
+  text-align: center;
+  padding: 1vw;
+  margin: 0;
+  border: 2px gray;
+  background: rgba(208, 208, 208, 0.6);
+}
+p[type=description]{
+  font-size: 18px;
+  font-style: italic;
+}
+p{
+  font-weight: bold;
+  font-size: 18px;
+}
+
+div.form{
+  display: block;
+  text-align: center;
+  margin-top: 5vh;
+  margin-left: 20%;
+  margin-right: 20%;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  padding-top: 2vh;
+  border: 2px grey;
+  background: rgba(208, 208, 208, 0.8);
+  border-radius: 4px;
+  min-width: 350px;
+}
+div.envelope{
+  background-image: url(https://w0.peakpx.com/wallpaper/390/661/HD-wallpaper-snow-street.jpg);
+  width: 100%;
+  min-width: 600px;
+}
+form{
+  display: inline-block;
+  margin-left: 0;
+  margin-right: 0;
+  text-align: left;
+}
+input[type=text], input[type=email], input[type=number], select{
+  display: block;
+  width: 100%;
+  height: 6%;
+  margin-top: 1vw;
+  margin-bottom: 3vw;
+  background: silver;
+  padding: 5px 
+}
+label[id=name-label]{
+  margin-bottom: 2vw;
+}
+button{
+  display: block;
+  margin-top: 2vw;
+  height: 7%;
+  width: 30%;
+  background: black;
+  color: white;
+  border-radius: 4px;
+}
+
+** end of undefined **
+
